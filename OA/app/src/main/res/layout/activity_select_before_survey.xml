@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/select_before_survey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/surveyAssetHead"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/colorHeadSurveyAsset"
+        android:gravity="center"
+        android:text="สำรวจสินทรัพย์"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+        android:id="@+id/txtCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="5dp"
+        android:text="บริษัท"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerCompany"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/spinnerCompany"
+        style="@style/Widget.AppCompat.DropDownItem.Spinner"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/spinner_background"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtDepartment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="5dp"
+        android:text="หน่วยงานผู้ถือครอง"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerDepartment"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/spinnerDepartment"
+        style="@style/Widget.AppCompat.DropDownItem.Spinner"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/spinner_background"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="ปีสำรวจ - ครั้งที่ - วันที่สำรวจ"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerYear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surveyAssetHead"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/spinnerYear"
+        style="@style/Widget.AppCompat.DropDownItem.Spinner"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/spinner_background"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCompany"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="5dp"
+        android:text="สถานที่ตั้งสินทรัพย์ (จังหวัด - อาคาร - หน่วยงาน - ชั้น)"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerPlace"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/spinnerPlace"
+        style="@style/Widget.AppCompat.DropDownItem.Spinner"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="232dp"
+        android:background="@drawable/spinner_background"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtPlan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textbox_background"
+        android:text="ตามแผน"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtIncreasePeriod"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPlace" />
+
+    <TextView
+        android:id="@+id/txtIncreasePeriod"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textbox_background"
+        android:text="เพิ่มระหว่างงวด"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtSurveySuccess"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtPlan"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPlace" />
+
+    <TextView
+        android:id="@+id/txtSurveySuccess"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textbox_background"
+        android:text="สำรวจแล้ว"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtWaitingSurvey"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtIncreasePeriod"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPlace" />
+
+    <TextView
+        android:id="@+id/txtWaitingSurvey"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/textbox_background"
+        android:text="รอสำรวจ"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtSurveySuccess"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPlace" />
+
+    <!-- data ตามแผน 1 -->
+    <TextView
+        android:id="@+id/plan1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtPlan"
+        app:layout_constraintStart_toStartOf="@+id/txtPlan"
+        app:layout_constraintTop_toBottomOf="@+id/txtPlan"
+        tools:ignore="MissingConstraints" />
+
+    <!-- data เพิ่มระหว่างงวด 1 -->
+    <TextView
+        android:id="@+id/increasePeriod1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtSurveySuccess"
+        app:layout_constraintStart_toStartOf="@+id/txtIncreasePeriod"
+        app:layout_constraintTop_toBottomOf="@+id/txtIncreasePeriod"
+        tools:ignore="MissingConstraints" />
+
+    <!-- data สำรวจแล้ว 1 -->
+    <TextView
+        android:id="@+id/surveySuccess1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtWaitingSurvey"
+        app:layout_constraintStart_toStartOf="@+id/txtSurveySuccess"
+        app:layout_constraintTop_toBottomOf="@+id/txtSurveySuccess"
+        tools:ignore="MissingConstraints" />
+
+    <!-- data รอสำรวจ 1 -->
+    <TextView
+        android:id="@+id/waitingSurvey1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtWaitingSurvey"
+        app:layout_constraintStart_toStartOf="@+id/txtWaitingSurvey"
+        app:layout_constraintTop_toBottomOf="@+id/txtWaitingSurvey"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtResultSurvey"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:text="ผลการสำรวจ"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtDepartHolding"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plan1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtDepartHolding"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:text="หน่วยงานผู้ถือครอง"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtPlacePosition"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtResultSurvey"
+        app:layout_constraintTop_toBottomOf="@+id/increasePeriod1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtPlacePosition"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:text="สถานที่ตั้ง"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtDepartHolding"
+        app:layout_constraintTop_toBottomOf="@+id/surveySuccess1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtExplore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:text="สำรวจพบ"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/txtResultSurvey"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultSurvey"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtNoExplore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:text="สำรวจไม่พบ"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtResultSurvey"
+        app:layout_constraintStart_toEndOf="@+id/txtExplore"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultSurvey"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtCorrect1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:text="ถูกต้อง"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/txtDepartHolding"
+        app:layout_constraintTop_toBottomOf="@+id/txtDepartHolding" />
+
+    <TextView
+        android:id="@+id/txtNoCorrect1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:text="ไม่ถูกต้อง"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtDepartHolding"
+        app:layout_constraintStart_toEndOf="@+id/txtCorrect1"
+        app:layout_constraintTop_toBottomOf="@+id/txtDepartHolding" />
+
+    <TextView
+        android:id="@+id/txtCorrect2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:text="ถูกต้อง"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/txtPlacePosition"
+        app:layout_constraintTop_toBottomOf="@+id/txtPlacePosition" />
+
+    <TextView
+        android:id="@+id/txtNoCorrect2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:text="ไม่ถูกต้อง"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtPlacePosition"
+        app:layout_constraintStart_toEndOf="@+id/txtCorrect2"
+        app:layout_constraintTop_toBottomOf="@+id/txtPlacePosition" />
+
+    <!-- data ผลการสำรวจ(สำรวจพบ) 1 -->
+    <TextView
+        android:id="@+id/sumExplore1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:textAlignment="center"
+        android:textColor="@color/colorCheckStatus"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtExplore"
+        app:layout_constraintStart_toStartOf="@+id/txtExplore"
+        app:layout_constraintTop_toBottomOf="@+id/txtExplore"
+        tools:ignore="MissingConstraints" />
+
+    <!-- data ผลการสำรวจ(สำรวจไม่พบ) 1 -->
+    <TextView
+        android:id="@+id/sumNotExplore1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtNoExplore"
+        app:layout_constraintStart_toStartOf="@+id/txtNoExplore"
+        app:layout_constraintTop_toBottomOf="@+id/txtNoExplore"
+        tools:ignore="MissingConstraints" />
+
+    <!-- data หน่วยงานผู้ถือครอง(ถูกต้อง) 1 -->
+    <TextView
+        android:id="@+id/departCorrect1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:textAlignment="center"
+        android:textColor="@color/colorCheckStatus"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtNoCorrect1"
+        app:layout_constraintStart_toStartOf="@+id/txtCorrect1"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorrect1"
+        tools:ignore="MissingConstraints" />
+
+    <!-- data หน่วยงานผู้ถือครอง(ไม่ถูกต้อง) 1 -->
+    <TextView
+        android:id="@+id/departNotCorrect1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtNoCorrect1"
+        app:layout_constraintStart_toStartOf="@+id/txtNoCorrect1"
+        app:layout_constraintTop_toBottomOf="@+id/txtNoCorrect1"
+        tools:ignore="MissingConstraints" />
+
+    <!-- data สถานที่ตั้ง(ถูกต้อง) 1 -->
+    <TextView
+        android:id="@+id/placeCorrect1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:textAlignment="center"
+        android:textColor="@color/colorCheckStatus"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtNoCorrect2"
+        app:layout_constraintStart_toStartOf="@+id/txtCorrect2"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorrect2"
+        tools:ignore="MissingConstraints" />
+
+    <!-- data สถานที่ตั้ง(ไม่ถูกต้อง) 1 -->
+    <TextView
+        android:id="@+id/placeNotCorrect1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@drawable/textbox_background"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtNoCorrect2"
+        app:layout_constraintStart_toStartOf="@+id/txtNoCorrect2"
+        app:layout_constraintTop_toBottomOf="@+id/txtNoCorrect2"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorBackScanQR"
+            android:text="กลับไปหน้าจอ Scan QR"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorBtnLogin"
+            android:text="สำรวจ"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="210dp"
+        android:layout_height="213dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/surveyAssetHead"
+        tools:ignore="MissingConstraints" />
+
+
+</android.support.constraint.ConstraintLayout>

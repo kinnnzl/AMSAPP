@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#E0E0E0" />
+
+    <!-- บริษัท -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/txtCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="บริษัท"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Text Box บริษัท -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/positionCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/textbox_background"
+            android:layout_toEndOf="@+id/txtCompany"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- โซน -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/txtZone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="โซน"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Text Box โซน -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/positionZone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/textbox_background"
+            android:layout_toEndOf="@+id/txtZone"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- หน่วยงาน -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/txtDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="หน่วยงาน"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Text Box หน่วยงาน -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/positionDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/textbox_background"
+            android:layout_toEndOf="@+id/txtDepartment"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- สถานที่/อาคาร -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/txtPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="สถานที่/อาคาร - ชั้น"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/positionPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/textbox_background"
+            android:layout_toEndOf="@+id/txtPlace"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- จังหวัด -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/txtProvince"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="จังหวัด"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Text Box จังหวัด -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/positionProvince"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textbox_background"
+            android:layout_toEndOf="@+id/txtProvince"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--&lt;!&ndash; ชั้น &ndash;&gt;-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:gravity="center">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtFloor"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:text="ชั้น :"-->
+            <!--android:textAlignment="textEnd"-->
+            <!--android:textColor="@color/design_default_color_primary_dark"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/positionFloor"-->
+            <!--android:layout_width="190dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="20dp"-->
+            <!--android:layout_marginEnd="60dp"-->
+            <!--android:layout_toEndOf="@+id/txtFloor"-->
+            <!--android:textAlignment="textStart"-->
+            <!--android:textColor="#808080"-->
+            <!--android:textSize="16sp" />-->
+
+
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

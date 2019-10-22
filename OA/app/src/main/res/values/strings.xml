@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Survey Asset Management</string>
+
+    <string name="text_alcohol">Alcohol</string>
+    <string name="text_coffee">Coffee</string>
+    <string name="text_pasta">Pasta</string>
+    <string name="text_cold_drinks">Cold Drinks</string>
+    <string name="text_expanded">Expanded</string>
+    <string name="text_collapsed">Collapsed</string>
+
+    <string name="text_asset_detail">รายละเอียดสินทรัพย์</string>
+    <string name="text_asset_location">สถานที่ตั้งสินทรัพย์</string>
+    <string name="text_survey_result">ผมการสำรวจ</string>
+    <string name="text_toolbar_save">ยืนยันผลสำรวจ</string>
+
+    <string-array name="country_arrays">
+        <item>CDG</item>
+        <item>G-ABLE</item>
+    </string-array>
+
+    <string-array name="assetStatus">
+        <item>ปกติ</item>
+        <item>ไม่ปกติ</item>
+    </string-array>
+</resources>

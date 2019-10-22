@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#E0E0E0" />
+
+    <!-- สถานะการสำรวจ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtSurveyStatus"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.5"
+            android:text="สถานะการสำรวจ"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtStatusAsset"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_weight="0.5"
+            android:text="สถานะสินทรัพย์"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/surveyStatus"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/textbox_background"
+            android:layout_toEndOf="@+id/txtSurveyStatus"
+            android:layout_weight="0.5"
+            android:textAlignment="center"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinnerStatusAsset"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/spinnerasset_background"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:entries="@array/assetStatus"
+            android:textAlignment="center" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/statusAsset"-->
+            <!--android:layout_width="190dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="10dp"-->
+            <!--android:background="@drawable/textbox_background"-->
+            <!--android:layout_marginEnd="25dp"-->
+            <!--android:layout_weight="0.5"-->
+            <!--android:layout_toEndOf="@+id/txtSurveyStatus"-->
+            <!--android:textAlignment="textStart"-->
+            <!--android:textColor="#808080"-->
+            <!--android:textSize="16sp" />-->
+
+    </LinearLayout>
+
+    <!-- หน่วยงานผู้ถือครอง -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtDepartmentHolding"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.5"
+            android:text="หน่วยงานผู้ถือครอง"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtAssetLocation"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_weight="0.5"
+            android:text="สถานที่ตั้งสินทรัพย์"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- สถานที่ตั้งสินทรัพย์ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/departmentHolding"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/txtDepartmentHolding"
+            android:layout_weight="0.5"
+            android:background="@drawable/textbox_background"
+            android:textAlignment="center"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/assetLocation"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_toEndOf="@+id/txtAssetLocation"
+            android:layout_weight="0.5"
+            android:background="@drawable/textbox_background"
+            android:textAlignment="center"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <!--&lt;!&ndash; สำรวจโดย &ndash;&gt;-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:gravity="center">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtSurveyBy"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:text="สำรวจโดย :"-->
+            <!--android:textAlignment="textEnd"-->
+            <!--android:textColor="@color/design_default_color_primary_dark"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/surveyBy"-->
+            <!--android:layout_width="190dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="20dp"-->
+            <!--android:layout_marginEnd="60dp"-->
+            <!--android:layout_toEndOf="@+id/txtSurveyBy"-->
+            <!--android:textAlignment="textStart"-->
+            <!--android:textColor="#808080"-->
+            <!--android:textSize="16sp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash; วันที่วันที่สำรวจ &ndash;&gt;-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:gravity="center">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtSurveyDate"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:text="วันที่วันที่สำรวจ :"-->
+            <!--android:textAlignment="textEnd"-->
+            <!--android:textColor="@color/design_default_color_primary_dark"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/surveyDate"-->
+            <!--android:layout_width="190dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="20dp"-->
+            <!--android:layout_marginEnd="60dp"-->
+            <!--android:layout_toEndOf="@+id/txtSurveyDate"-->
+            <!--android:textAlignment="textStart"-->
+            <!--android:textColor="#808080"-->
+            <!--android:textSize="16sp" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!-- หมายเหตุ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/txtNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="หมายเหตุ"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Text box หมายเหตุ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/note"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textbox_background"
+            android:layout_toEndOf="@+id/txtNote"
+            android:textAlignment="textStart"
+            android:inputType="text"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

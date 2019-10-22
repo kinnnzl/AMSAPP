@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#333F4F</color>
+    <color name="colorPrimaryDark">#2A3441</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorCDG">#313376</color>
+    <color name="colorBtnCDG">#1B1464</color>
+    <color name="colorHome">#FFC107</color>
+    <color name="colorDialog">#F29B2D</color>
+    <color name="colorSurveyStatus">#008000</color>
+    <color name="colorBtnLogin">#FF9933</color>
+    <color name="colorHeadSurveyAsset">	#FFFF00</color>
+    <color name="colorBackScanQR">#808080</color>
+    <color name="colorCheckStatus">#558B2F</color>
+</resources>

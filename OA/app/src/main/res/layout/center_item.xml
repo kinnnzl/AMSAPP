@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/OpenScanQR"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:id="@+id/itemRec"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgCenterItem"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/txtCenterTitle"
+                android:layout_width="156dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/imgCenterItem"
+                android:text="Apple MacBook"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="265dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/txtCenterTitle"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="3dp"
+                android:layout_toEndOf="@+id/imgCenterItem"
+                android:gravity="top">
+
+                <TextView
+                    android:id="@+id/txtCenterDesc"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtCenterTitle"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="13.3 Inch, 256 GB"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

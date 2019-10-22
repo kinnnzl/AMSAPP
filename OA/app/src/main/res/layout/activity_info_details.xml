@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#E0E0E0" />
+
+    <!-- รหัสสินทรัพย์ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/txtAssetCodeInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="รหัสสินทรัพย์ :"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Text box รหัสสินทรัพย์ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/assetCodeInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_toEndOf="@+id/txtAssetCodeInfo"
+            android:background="@drawable/textbox_background"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- ชื่อสินทรัพย์ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/txtAssetNameInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="ชื่อสินทรัพย์ :"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Text box ช ื่อสินทรัพย์ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/assetNameInfo"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_toEndOf="@+id/txtAssetNameInfo"
+            android:background="@drawable/textbox_background"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- วันที่รับสินทรัพย์ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/txtDateReceiveAssetInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="วันที่รับสินทรัพย์ :"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Text box วันที่รับสินทรัพย์ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dateReceiveAssetInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/textbox_background"
+            android:layout_toEndOf="@+id/txtDateReceiveAssetInfo"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Serial No -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/txtSerialNoInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="Serial No :"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Text box Serial No -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/serialNoInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_toEndOf="@+id/txtSerialNoInfo"
+            android:background="@drawable/textbox_background"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- หน่วยงานผู้ถือครอง -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/txtDepartmentHoldingInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="หน่วยงานผู้ถือครอง :"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Text box หน่วยงานผู้ถือครอง -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/departmentHoldingInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_toEndOf="@+id/txtDepartmentHoldingInfo"
+            android:background="@drawable/textbox_background"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- พนักงานผู้ถือครอง -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/txtEmployeeHoldingInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="พนักงานผู้ถือครอง :"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Text box พนักงานผู้ถือครอง -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/employeeHoldingInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp"
+            android:layout_toEndOf="@+id/txtEmployeeHoldingInfo"
+            android:background="@drawable/textbox_background"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

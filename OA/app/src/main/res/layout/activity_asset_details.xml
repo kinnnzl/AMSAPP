@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#E0E0E0" />
+
+    <!-- รหัสสินทรัพย์ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/txtAssetCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="รหัสสินทรัพย์"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Text Box รหัสสินทรัพย์ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/assetCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_toEndOf="@+id/txtAssetCode"
+            android:background="@drawable/textbox_background"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- ชื่อสินทรัพย์ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/txtAssetName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="ชื่อสินทรัพย์"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Text Box ชื่อสินทรัพย์ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/assetName"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_toEndOf="@+id/txtAssetName"
+            android:background="@drawable/textbox_background"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Serial No -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/txtSerialNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="Serial No"
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/SerialNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_toEndOf="@+id/txtSerialNo"
+            android:background="@drawable/textbox_background"
+            android:inputType="text"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- วันที่รับสินทรัพย์ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/txtDateReceiveAsset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="วันที่รับสินทรัพย์ "
+            android:textAlignment="textStart"
+            android:textColor="#808080"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Text Box วันที่รับสินทรัพย์ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dateReceiveAsset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/textbox_background"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--&lt;!&ndash; สถานะสินทรัพย์ &ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:gravity="center">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txtAssetStatus"-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:text="สถานะสินทรัพย์ :"-->
+    <!--android:textAlignment="textEnd"-->
+    <!--android:textColor="@color/design_default_color_primary_dark"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/assetStatus"-->
+    <!--android:layout_width="190dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginEnd="60dp"-->
+    <!--android:layout_toEndOf="@+id/txtAssetStatus"-->
+    <!--android:textAlignment="textStart"-->
+    <!--android:textColor="#808080"-->
+    <!--android:textSize="16sp" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash; มูลค่าคงเหลือ &ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:gravity="center">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txtResidualValue"-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:text="มูลค่าคงเหลือ :"-->
+    <!--android:textAlignment="textEnd"-->
+    <!--android:textColor="@color/design_default_color_primary_dark"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/residualValue"-->
+    <!--android:layout_width="190dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginEnd="60dp"-->
+    <!--android:layout_toEndOf="@+id/txtResidualValue"-->
+    <!--android:textAlignment="textStart"-->
+    <!--android:textColor="#808080"-->
+    <!--android:textSize="16sp" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash; ประเภทสินทรัพย์ &ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:gravity="center">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txtAssetType"-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:text="ประเภทสินทรัพย์ :"-->
+    <!--android:textAlignment="textEnd"-->
+    <!--android:textColor="@color/design_default_color_primary_dark"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/assetType"-->
+    <!--android:layout_width="190dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginEnd="60dp"-->
+    <!--android:layout_toEndOf="@+id/txtAssetType"-->
+    <!--android:textAlignment="textStart"-->
+    <!--android:textColor="#808080"-->
+    <!--android:textSize="16sp" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash; หมวดสินทรัพย์ &ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:gravity="center">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txtAssetGroup"-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:text="หมวดสินทรัพย์ :"-->
+    <!--android:textAlignment="textEnd"-->
+    <!--android:textColor="@color/design_default_color_primary_dark"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/AssetGroup"-->
+    <!--android:layout_width="190dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginEnd="60dp"-->
+    <!--android:layout_toEndOf="@+id/txtAssetGroup"-->
+    <!--android:textAlignment="textStart"-->
+    <!--android:textColor="#808080"-->
+    <!--android:textSize="16sp" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash; หมวดสินทรัพย์ทางบัญชี &ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:gravity="center">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txtAssetAccountGroup"-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:text="หมวดสินทรัพย์ทางบัญชี :"-->
+    <!--android:textAlignment="textEnd"-->
+    <!--android:textColor="@color/design_default_color_primary_dark"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/AssetAccountGroup"-->
+    <!--android:layout_width="190dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginEnd="60dp"-->
+    <!--android:layout_toEndOf="@+id/txtAssetAccountGroup"-->
+    <!--android:textAlignment="textStart"-->
+    <!--android:textColor="#808080"-->
+    <!--android:textSize="16sp" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash; อายุการใช้งาน &ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:gravity="center">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txtLifeTime"-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:text="อายุการใช้งาน :"-->
+    <!--android:textAlignment="textEnd"-->
+    <!--android:textColor="@color/design_default_color_primary_dark"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/lifeTime"-->
+    <!--android:layout_width="190dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginEnd="60dp"-->
+    <!--android:layout_toEndOf="@+id/txtLifeTime"-->
+    <!--android:textAlignment="textStart"-->
+    <!--android:textColor="#808080"-->
+    <!--android:textSize="16sp" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash; Serial No &ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:visibility="invisible"-->
+    <!--android:gravity="center">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/demoSerialNo"-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:text="Serial No :"-->
+    <!--android:textAlignment="textEnd"-->
+    <!--android:textColor="@color/design_default_color_primary_dark"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/SerialNoDemo"-->
+    <!--android:layout_width="190dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginEnd="60dp"-->
+    <!--android:layout_toEndOf="@+id/demoSerialNo"-->
+    <!--android:textAlignment="textStart"-->
+    <!--android:textColor="#808080"-->
+    <!--android:textSize="16sp" />-->
+
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>

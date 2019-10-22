@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ShowInfoActivity">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <!-- everything you already have -->
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/assetDetailsInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#E0E0E0"
+                android:gravity="center"
+                app:expandOnClick="true"
+                app:icon="@drawable/ic_summary_asset_black_24dp"
+                app:inner_view="@layout/activity_info_details"
+                app:title="รายละเอียดสินทรัพย์"
+                tools:ignore="MissingConstraints" />
+
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/positionAssetInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="#E0E0E0"
+                android:gravity="center"
+                app:expandOnClick="true"
+                app:icon="@drawable/ic_position_building_black_24dp"
+                app:inner_view="@layout/activity_info_place"
+                app:title="สถานที่ตั้งสินทรัพย์"
+                tools:ignore="MissingConstraints" />
+
+        </TableLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

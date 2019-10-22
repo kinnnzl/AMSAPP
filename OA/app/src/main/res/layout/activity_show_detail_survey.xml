@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".showDetailSurveyActivity">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <!-- everything you already have -->
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/assetDetailsSurvey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#E0E0E0"
+                android:gravity="center"
+                app:expandOnClick="true"
+                app:icon="@drawable/ic_asset_black_24dp"
+                app:inner_view="@layout/activity_asset_details"
+                app:title="รายละเอียดสินทรัพย์"
+                tools:ignore="MissingConstraints" />
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/summaryAssetDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#E0E0E0"
+                android:gravity="center"
+                app:expandOnClick="true"
+                app:icon="@drawable/ic_summary_asset_black_24dp"
+                app:inner_view="@layout/activity_summary_details"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/departmentDetails"
+                app:title="ผลการสำรวจ"
+                tools:ignore="MissingConstraints" />
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/departmentDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#E0E0E0"
+                android:gravity="center"
+                app:expandOnClick="true"
+                app:icon="@drawable/ic_department_building_black_24dp"
+                app:inner_view="@layout/activity_department_details"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/assetDetailsSurvey"
+                app:title="หน่วยงานผู้ถือครอง"
+                tools:ignore="MissingConstraints" />
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/positionAssetDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#E0E0E0"
+                android:gravity="center"
+                app:expandOnClick="true"
+                app:icon="@drawable/ic_position_building_black_24dp"
+                app:inner_view="@layout/activity_position_details"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/departmentDetails"
+                app:title="สถานที่ตั้งทรัพย์สิน"
+                tools:ignore="MissingConstraints" />
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorBackScanQR"
+            android:text="กลับไปหน้าจอ Scan QR"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorBtnLogin"
+            android:text="ยืนยันผลการสำรวจ"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarSurvey"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="210dp"
+        android:layout_height="213dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        tools:ignore="MissingConstraints" />
+
+    <!--<Button-->
+    <!--android:id="@+id/btnSave"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="ยืนยันผลการสำรวจ"></Button>-->
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="323dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txtYear"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="ปี"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinnerYear"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+            android:layout_width="255dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/spinner_background"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="323dp"
+        android:layout_height="40dp"
+
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txtCompany"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="บริษัท"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinnerCompany"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+            android:layout_width="255dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/spinner_background"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="323dp"
+        android:layout_height="40dp"
+
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txtDepartment"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="หน่วยงาน"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinnerDepartment"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+            android:layout_width="255dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/spinner_background"
+            android:padding="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="323dp"
+        android:layout_height="40dp"
+
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txtPlace"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="สถานที่"
+            android:textAlignment="textStart"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinnerPlace"
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+            android:layout_width="255dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/spinner_background"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorHome"
+            android:text="ค้นหา"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorCDG"
+            android:text="กลับ"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

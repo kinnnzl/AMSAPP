@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <string-array name="Company">
+        <item>Select Company</item>
+        <item>CDGS</item>
+        <item>CDT</item>
+        <item>CORE</item>
+        <item>GABLE</item>
+        <item>GIS</item>
+        <item>GISC</item>
+    </string-array>
+
+</resources>

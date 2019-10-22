@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <!-- everything you already have -->
+
+        <TextView
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/colorHeadSurveyAsset"
+            android:gravity="center"
+            android:text="สำรวจสินทรัพย์"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:textSize="16sp"></TextView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/centerRec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnBackSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorBtnLogin"
+        android:text="กลับไปหน้าจอ Sign In"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
